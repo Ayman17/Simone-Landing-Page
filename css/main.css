@@ -1,3 +1,11 @@
+/* Web sit colors */
+:root {
+    --mainColor: #53c896;
+    --whiteText: white;
+}
+
+
+
 /* Home Page */
 
 header {
@@ -6,4 +14,64 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.home-color-layer {
+    background-color: rgba(17, 20, 24, 80%);
+    height: 100vh;
+}
+
+/* Nav Bar */
+
+.home-nav {
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.brand {
+    color: var(--whiteText);
+}
+
+.brand:hover {
+    color: var(--whiteText);
+}
+
+.nav-links li {
+    margin: 0px 5px;
+}
+
+.nav-links li a{
+    font-size: 16px;
+    color: var(--whiteText);
+}
+
+.nav-links li a:hover {
+    color: var(--mainColor);
+}
+
+.nav-active {
+    color: var(--mainColor) !important;
+}
+
+.nav-icons i{
+    margin: 10px;
+    font-size: 18px;
+    color: var(--whiteText);
+    transition-duration: 0.25s;
+}
+
+.nav-icons i:hover {
+    cursor: pointer;
+}
+
+.twitter:hover {
+    color: #3498db;
+}
+
+.facebook:hover {
+    color: #3D5996;
+}
+
+.dribbble:hover {
+    color: #D84A80;
 }
