@@ -1,6 +1,6 @@
 /* Web sit colors */
 :root {
-    --mainColor: #53c896;
+    --mainColor: #1fc996;
     --whiteText: white;
 }
 
@@ -74,4 +74,27 @@ header {
 
 .dribbble:hover {
     color: #D84A80;
+}
+
+/* Home Page Content */
+
+.home-content {
+    color: var(--whiteText);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.home-content span {
+    font-size: 64px;
+}
+
+.home-content button {
+    color: var(--mainColor) !important;
+    border: var(--mainColor) solid !important;
+    transition-duration: 0.25s;
+}
+
+.home-content button:hover {
+    color: var(--whiteText) !important;
+    background-color: var(--mainColor) ;
 }
