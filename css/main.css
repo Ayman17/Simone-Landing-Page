@@ -80,12 +80,54 @@ header {
 
 .home-content {
     color: var(--whiteText);
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 20vh;
+    margin-bottom: 2vh;
 }
 
-.home-content span {
-    font-size: 64px;
+.home-content span::after {
+    font-size: 5vw;
+    content: "";
+    animation: spanMove 5s infinite alternate;
+}
+
+@keyframes spanMove {
+    0%   {content: "|";}
+    3%   {content: "I|";}
+    6%   {content: "I'|";}
+    9%   {content: "I'm|";}
+    12%   {content: "I'm |";}
+    15%   {content: "I'm a|";}
+    18%  {content: "I'm a |";}
+    21%  {content: "I'm a D|";}
+    24%  {content: "I'm a De|";}
+    27%  {content: "I'm a Des|";}
+    30%  {content: "I'm a Desi|";}
+    33%  {content: "I'm a Desig|";}
+    36%  {content: "I'm a Design|";}
+    39%  {content: "I'm a Designe|";}
+    42%  {content: "I'm a Designer|";}
+    43%  {content: "I'm a Designer.|";}
+    50% {content: "I'm a Designer.|";}
+    51% {content: "I'm a Designer|";}
+    54% {content: "I'm a Designe|";}
+    57% {content: "I'm a Design|";}
+    60% {content: "I'm a Desig|";}
+    63% {content: "I'm a Desi|";}
+    66% {content: "I'm a Des|";}
+    69% {content: "I'm a De|";}
+    72% {content: "I'm a D|";}
+    75% {content: "I'm a |";}
+    78% {content: "I'm a F|";}
+    81% {content: "I'm a Fr|";}
+    84% {content: "I'm a Fre|";}
+    87% {content: "I'm a Free|";}
+    90% {content: "I'm a Freel|";}
+    91% {content: "I'm a Freela|";}
+    93% {content: "I'm a Freelan|";}
+    95% {content: "I'm a Freelanc|";}
+    96% {content: "I'm a Freelance|";}
+    97% {content: "I'm a Freelancer.|";}
+    100% {content: "I'm a Freelancer.|";}
 }
 
 .home-content button {
@@ -97,4 +139,15 @@ header {
 .home-content button:hover {
     color: var(--whiteText) !important;
     background-color: var(--mainColor) ;
+}
+
+.down-arrow {
+    position: relative;
+    opacity: 0;
+    animation: arrow-move 2s infinite;
+}
+
+@keyframes arrow-move {
+    0% {top: 50px;}
+    100% {top: 150px; opacity: 1;}
 }
