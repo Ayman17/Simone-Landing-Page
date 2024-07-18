@@ -2,9 +2,44 @@
 :root {
     --mainColor: #1fc996;
     --whiteText: white;
+    --lightText: #6d747d;
 }
 
+/* Public Classes */
+.section-title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px 0%;
+    margin-bottom: 4vw;
+}
 
+.section-title h2 {
+    font-size: 9vw;
+    font-weight: 600;
+    opacity: 0.05;
+    position: absolute;
+}
+
+.section-title p {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.line {
+    height: 4px;
+    width: 80px;
+    background-color: var(--mainColor);
+    position: relative;
+    bottom: 20px;
+}
+
+.my-name {
+    color: var(--mainColor);
+}
 
 /* Home Page */
 
@@ -151,3 +186,54 @@ header {
     0% {top: 50px;}
     100% {top: 150px; opacity: 1;}
 }
+
+/* About Us Section */
+.list-info li {
+    padding: 10px 0px;
+    border-bottom: rgba(0, 0, 0, 0.057) solid ;
+    list-style: none;
+}
+
+.list-info .email {
+    color: var(--mainColor);
+}
+
+.list-info .last {
+    border-bottom: none;
+}
+
+.list-info span {
+    font-weight: 600;
+}
+
+.cv-btn {
+    background-color: var(--mainColor) !important;
+    color: var(--whiteText);
+    padding: 10px 45px;
+    box-shadow: rgba(0, 0, 0, 0.067) 0px 10px 10px 5px;
+    margin-bottom: 2vw;
+    transition-duration: 0.5s;
+}
+
+.cv-btn:hover {
+    color: var(--whiteText);
+    background-color: #0d9e73 !important;
+
+}
+
+.experiance-cards .exp-card {
+    text-align: center;
+    border-right: solid rgba(0, 0, 0, 0.065);
+    padding: 5px 0px;
+}
+
+.experiance-cards .last {
+    border-right: none;
+}
+
+.experiance-cards div h4 {
+    font-size: 3vw;
+    color: var(--lightText);
+}
+
+
