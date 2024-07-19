@@ -384,3 +384,41 @@ header {
     margin: 3px;
     color: gray;
 }
+
+/* Contact Section */
+
+.contact-section {
+    background-color: var(--alterPage);
+}
+
+.contact-section label {
+    color: rgba(128, 128, 128, 0.708);
+}
+
+.contact-section .info-icons i{
+    font-size: 18px;
+    color: var(--mainColor);
+    margin: 5px;
+}
+
+.contact-section .media-icons i{
+    font-size: 18px;
+    margin: 10px;
+}
+
+.google:hover {
+    color: rgb(184, 0, 0);
+}
+
+
+/* Footer */
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.footer .terms {
+    border-right: rgba(0, 0, 0, 0.161) solid;
+}
