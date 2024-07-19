@@ -41,6 +41,10 @@
     color: var(--mainColor);
 }
 
+section {
+    padding-top: 48px;
+}
+
 /* Home Page */
 
 header {
