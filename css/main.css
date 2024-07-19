@@ -196,6 +196,8 @@ header {
 
 .list-info .email {
     color: var(--mainColor);
+    text-decoration: none;
+    
 }
 
 .list-info .last {
@@ -236,4 +238,26 @@ header {
     color: var(--lightText);
 }
 
+/* Services Section */
+
+.Services-section {
+    background-color: #f8f8fb;
+}
+
+.ser-card {
+    display: flex;
+}
+
+.ser-card i {
+    font-size: 30px;
+    color: var(--mainColor);
+    background-color: var(--whiteText);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.054) 0px 10px 10px 5px;
+}
+
+.info-text {
+    padding-left: 25px;
+}
 
