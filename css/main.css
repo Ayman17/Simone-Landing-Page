@@ -261,3 +261,32 @@ header {
     padding-left: 25px;
 }
 
+/* Resume Section */
+
+.info-card {
+    border: rgba(0, 0, 0, 0.096) solid;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.info-card span {
+    color: var(--whiteText);
+    background-color: var(--mainColor);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.info-card h5 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.info-card h6 {
+    color: #dc3444;
+    margin-bottom: 15px;
+}
+
+.bar-color {
+    background-color: var(--mainColor);
+}
