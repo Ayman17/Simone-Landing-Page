@@ -360,3 +360,27 @@ header {
     color: white;
     font-size: 1.5rem;
 }
+
+/* Client Speak Section */
+
+.rating-icon {
+    color: #ffc007;
+}
+
+.card-color {
+    background-color: var(--alterPage);
+}
+
+.tabs-icon .acitv-circle {
+    color: var(--mainColor);
+    border: var(--mainColor) solid;
+    border-radius: 15px;
+}
+
+.tabs-icon i {
+    cursor: pointer;
+    font-size: 8px;
+    padding: 5px;
+    margin: 3px;
+    color: gray;
+}
