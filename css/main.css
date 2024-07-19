@@ -3,6 +3,7 @@
     --mainColor: #1fc996;
     --whiteText: white;
     --lightText: #6d747d;
+    --alterPage: #f8f8fb;
 }
 
 /* Public Classes */
@@ -293,4 +294,69 @@ header {
 
 .bar-color {
     background-color: var(--mainColor);
+}
+
+/* My Work Section */
+
+.my-work-section {
+    background-color: var(--alterPage);
+}
+
+.my-work-section ul {
+    padding-bottom: 25px;
+}
+
+.my-work-section a {
+    color: var(--lightText);
+    font-weight: 500;
+}
+
+.my-work-section a:hover {
+    color: var(--mainColor);
+    border: none !important;
+}
+
+.my-work-section .active {
+    color: var(--mainColor) !important;
+    border-bottom: var(--mainColor) solid;
+}
+
+.my-work-section .active:hover {
+    border-bottom: var(--mainColor) solid !important;
+}
+
+.my-work-section img {
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+    transition-duration: 0.5s;
+}
+
+.my-work-section .img-container {
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+.my-work-section .img-container .text-img {
+    opacity: 0;
+}
+
+.my-work-section .img-container:hover img {
+    filter: brightness(30%) blur(2px);
+    cursor: pointer;
+}
+
+.my-work-section .img-container:hover .text-img {
+    opacity: 1;
+}
+
+.my-work-section .text-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
 }
